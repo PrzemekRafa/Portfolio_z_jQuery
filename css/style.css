@@ -1,0 +1,343 @@
+html {
+    font-size: 1.6vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    color: #291f1a;
+}
+
+/* header */
+
+#head {
+    background-image: url('../img/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: left -120px;
+    background-size: 100%;
+    width: 100%;
+    height: 35rem;
+    position: relative;
+}
+
+#head_txt {
+    height: 11.5rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* menu */
+
+#menu {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    line-height: 4rem;
+    z-index: 10;
+    background-image: url('../img/header-background.jpg');
+    background-repeat: no-repeat;
+    background-position: left -120px;
+    background-size: 100%;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding-right: 3.5%;
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.menu_item a:hover {
+    color: grey;
+}
+
+#menu .toggle, [id=drop] {
+    display: none;
+}
+
+/* elementy wspólne */
+
+h1 {
+    font-size: 9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1.9em;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-bottom: 1.9rem;
+    text-align: center;
+}
+
+h1 span {
+    color: #1ac056;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+section {
+    margin: auto;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+    overflow: hidden;    
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #f9fcfe;
+    margin-bottom: 2px;
+}
+
+/* sekcja o mnie */
+
+    #about_photo {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+    }
+
+    #about_photo img {
+        max-height: 15.5rem;
+    }
+
+    #about_txt {
+        width: 50%;
+        display: inline-block;
+        float: left;
+    }
+
+    #about_txt p {
+        padding-left: 1.5vw;
+        padding-right: 7.5vw;
+        line-height: 1.5rem;
+    }  
+
+/* sekcja umiejętności */
+
+#skills p {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    line-height: 1.5rem;    
+}
+
+#figures {
+    text-align: center;
+}
+
+#figures figure{
+    display: inline-block;
+    text-align: center;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 0;
+}
+
+/* sekcja portfolio */
+
+#portfolio_box {
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+}
+
+.portfolio_item {
+    width: 33.33333%;
+    height: 22rem;
+    float: left;
+    background-size: cover;
+}
+
+#item_1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#item_2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#item_3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+.portfolio_maska {
+    background-color: rgba(42,61,79,0.8);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_maska:hover {
+    opacity: 1;
+}
+
+.maska_border {
+    height: 100%;
+    border: 1px solid white;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.maska_content {
+    text-align: center;
+    color: white;
+}
+
+.maska_content p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding: 5%;
+}
+
+/* sekcja kontakt */
+#contact {
+    background-color: #213b50;
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    font-size: 0.7rem;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+#contact h3 {
+    text-align: left;
+}
+
+#contact p {
+    padding-top: 1.25rem;
+}
+
+#contact p a {
+    color: #1ac056;
+}
+
+#contact > div, address {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+address {
+    font-style: normal;
+}
+
+.form_input:not(#button_input) {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    background-color: #2b4a64;
+    color: white;
+    outline-style: none;
+    border-width: 0px;
+    margin-bottom: 0.7rem;
+    height: 1.9rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.4vw;
+    padding-right: 1.4vw;
+    box-sizing: border-box;
+}
+
+#form_box {
+    margin-top: 2.5rem;
+}
+
+textarea#form_message.form_input {
+    height: 3.75rem;
+}
+
+input[type=submit] {
+    background-color: #1ac056;
+    float: right;
+    width: 12vw;
+    height: 3.75em;
+    color: white;
+    outline-style: none;
+    border-width: 2px;
+}
+
+
+/*SOCIAL MEDIA*/
+
+.socialmedia-container {
+    width: 100%;
+    display: inline-block;
+    padding-top: 2em;
+    box-sizing: border-box;
+}
+
+.social_icon {
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    margin-right: 1vw;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+
+.social_icon:hover {
+    color: #213b50;
+    border-color: #213b50;
+    background-color: white;
+}
+
+
+/* Copyrights */
+
+.copy {
+    width: 100%;
+    line-height: 1.5em;
+    font-weight: 200;
+    color: white;
+    background-color: #142634;
+    display: inline-block;
+    padding: .25em 2em .3em 2em;
+    box-sizing: border-box;
+}
